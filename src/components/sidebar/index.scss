@@ -46,7 +46,7 @@
         }
   
         &:hover {
-          color: #ffd700;
+          color: #004AAD;
   
           svg {
             opacity: 0;
@@ -89,6 +89,36 @@
           content: 'CONTATOS';
         }
       }
+
+      a.active {
+        svg {
+            color: #004AAD;
+        }
+      }
         
     }
+    ul {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        
+
+        li {
+            a {
+                padding: 7px 0;
+                display: block;
+                font-size: 15px;
+                line-height: 16px;
+                color: #4d4d4e;
+                &:hover svg {
+                    color: #004AAD ;
+                }
+            }
+        }
+      }
 }
