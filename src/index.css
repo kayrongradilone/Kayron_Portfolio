@@ -3,7 +3,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: 300 11px/1.4 'Helvitica Neue', 'sans-serif';
+  font: 300 11px/1.4 'Helvitica Neue', 'sans-serif';
   color: #444;
   background-color: #022c43;
   overflow: hidden;
