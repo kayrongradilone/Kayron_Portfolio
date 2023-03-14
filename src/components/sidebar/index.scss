@@ -46,7 +46,7 @@
         }
   
         &:hover {
-          color: #004AAD;
+          color: #ffd700;
   
           svg {
             opacity: 0;
@@ -86,13 +86,13 @@
   
       a.contact-link {
         &:after {
-          content: 'CONTATOS';
+          content: 'CONTATO';
         }
       }
 
       a.active {
         svg {
-            color: #004AAD;
+            color: #ffd700;
         }
       }
         
@@ -116,7 +116,7 @@
                 line-height: 16px;
                 color: #4d4d4e;
                 &:hover svg {
-                    color: #004AAD ;
+                    color: #ffd700 ;
                 }
             }
         }

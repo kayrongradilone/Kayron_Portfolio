@@ -1,6 +1,6 @@
 import { Link,NavLink } from 'react-router-dom';
 import './index.scss';
-import LogoK from '../../assets/images/logo-k.png';
+import LetraK from '../../assets/images/letra-k.png';
 import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +9,7 @@ import { faFacebook, faGithub, faInstagram, faLinkedin, faWhatsapp } from '@fort
 const Sidebar = () => (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
-            <img src={LogoK} alt='logo'></img>
+            <img src={LetraK} alt='logo'></img>
             <img className='sub-logo' src={LogoSubtitle} alt='kayron'></img>
         </Link>
         <nav>
@@ -36,6 +36,11 @@ const Sidebar = () => (
                 <a target="_blank" rel='noreferrer' href='https://github.com/kayrongradilone'>
                 <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                 </a>
+            <li>
+                <a target="_blank" rel='noreferrer' href='https://api.whatsapp.com/send?phone=5548991158345'>
+                <FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
+                </a>
+            </li>
             </li>
             <li>
                 <a target="_blank" rel='noreferrer' href='https://instagram.com/kayrongradilone'>
@@ -45,11 +50,6 @@ const Sidebar = () => (
             <li>
                 <a target="_blank" rel='noreferrer' href='https://facebook.com/kayrongradilone'>
                 <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
-                </a>
-            </li>
-            <li>
-                <a target="_blank" rel='noreferrer' href='https://api.whatsapp.com/send?phone=5548991158345'>
-                <FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
                 </a>
             </li>
         </ul>
