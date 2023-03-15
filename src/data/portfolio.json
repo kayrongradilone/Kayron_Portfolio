@@ -5,6 +5,18 @@
             "title": "JSilveira Administradora de imóveis",
             "description": "React, Typescript, Material UI, Axios, React-Router, Json-server, yup",
             "url": "https://j-silveira-adm-imoveis.vercel.app/"
+        },
+        {
+            "cover":"/portfolio-covers/cesilveira1.png",
+            "title": "Centro Executivo Silveira l",
+            "description": "React, Bootstrap, Axios, React-Router, yup",
+            "url": "https://github.com/barcellos96/cesilveiraum"
+        },
+        {
+            "cover":"/portfolio-covers/chargeback.png",
+            "title": "Chargeback Table",
+            "description": "React, Bootstrap, Axios",
+            "url": "https://github.com/kayrongradilone/chargeBackTable-React"
         }
     ]
 }
