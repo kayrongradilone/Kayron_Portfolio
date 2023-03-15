@@ -12,6 +12,7 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
+import Sidebar from '../Sidebar'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -34,6 +35,7 @@ const About = () => {
 
   return (
     <>
+      <Sidebar/>
       <Loader type="pacman" />
       <Layout />
       <div className="container about-page">

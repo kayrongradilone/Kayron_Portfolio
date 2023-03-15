@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import LetraK from '../../assets/images/letra-k.png'
 import AnimatedLetters from '../AnimatedLetters'
 import Layout from '../Layout'
+import Sidebar from '../Sidebar'
 import './index.scss'
 import Logo from './Logo'
 
@@ -45,6 +46,7 @@ const Home = () => {
   const greetings = ['E', 'u', ' ', 'm', 'e', ' ', 'c', 'h', 'a', 'm', 'o']
   return (
     <>
+    <Sidebar/>
       <Layout />
       <div className="container home-page">
         <div className="text-zone">
