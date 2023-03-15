@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import LetraK from '../../assets/images/letra-k.png'
 import AnimatedLetters from '../AnimatedLetters'
 import Layout from '../Layout'
-import Sidebar from '../sidebar'
+import Sidebar from '../Sidebar'
 import './index.scss'
 import Logo from './Logo'
 
