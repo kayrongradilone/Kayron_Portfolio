@@ -89,6 +89,11 @@
           content: 'CONTATO';
         }
       }
+      a.portfolio-link {
+        &:after {
+          content: 'PROJETOS';
+        }
+      }
 
       a.active {
         svg {
