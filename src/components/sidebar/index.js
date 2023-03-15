@@ -36,11 +36,11 @@ const Sidebar = () => (
                 <a target="_blank" rel='noreferrer' href='https://github.com/kayrongradilone'>
                 <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                 </a>
+            </li>
             <li>
                 <a target="_blank" rel='noreferrer' href='https://api.whatsapp.com/send?phone=5548991158345'>
                 <FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
                 </a>
-            </li>
             </li>
             <li>
                 <a target="_blank" rel='noreferrer' href='https://instagram.com/kayrongradilone'>
