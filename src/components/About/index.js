@@ -35,7 +35,7 @@ const About = () => {
 
   return (
     <>
-      <Sidebar/>
+      <Sidebar />
       <Loader type="pacman" />
       <Layout />
       <div className="container about-page">
@@ -48,8 +48,8 @@ const About = () => {
             />
           </h1>
           <p>
-            Sou um desenvolvedor Front-End, com enfâse no usa da biblioteca
-            React, atualmente estou me formando no cusro de Análise e
+            Sou um desenvolvedor Front-End, com ênfase no usa da biblioteca
+            React, atualmente estou me formando no curso de Análise e
             desenvolvimento de sistemas e estou a procura de ingressar na
             carreira.
           </p>
@@ -62,8 +62,8 @@ const About = () => {
             atuais tecnologias da área.
           </p>
           <p>
-            Sou um profissional que busca sempre aprender com excelencia novas
-            coisas, e evoluir na carreiro é sempre meu maior objetivo.
+            Sou um profissional que busca sempre aprender com excelência novas
+            coisas, e evoluir na carreira é sempre meu maior objetivo.
           </p>
         </div>
         <div className="stage-cube-cont">
