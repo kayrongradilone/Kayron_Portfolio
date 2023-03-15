@@ -95,7 +95,7 @@ const Contact = () => {
           </h1>
           <p>
             Estou interessado em conseguir meu primeiro trabalho como júnior em
-            desenvovimento, na parte do Front-End, fique a vontade para me
+            desenvolvimento, na parte do Front-End, fique a vontade para me
             contatar e tirar qualquer dúvida sobre minhas habilidades.
           </p>
           <div className="contact-form">
