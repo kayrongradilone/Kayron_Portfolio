@@ -32,7 +32,7 @@ const Portfolio = () => {
               ></img>
               <div className='content'>
                 <p className='title'>
-                  {port.tile}
+                  {port.title}
                 </p>
                 <h4 className='description'>
                   {port.description}
