@@ -75,3 +75,23 @@
         }
       }
 }
+
+@media screen and (max-width: 1200px) {
+  .tags,
+  .home-page h1:before,
+  .home-page h1:after {
+    display: none;
+  }
+  .container {
+    overflow: scroll;
+  }
+  .container .text-zone {
+    margin-bottom: 90%;
+    width: 67%;
+    margin-left: 20px;
+  }
+  .logo-container .solid-photo {
+    display: none;
+  }
+
+}

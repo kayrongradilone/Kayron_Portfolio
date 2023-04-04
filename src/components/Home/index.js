@@ -86,7 +86,7 @@ const Home = () => {
             ENTRE EM CONTATO
           </Link>
         </div>
-        <Logo/>
+        <Logo className="logoK"/>
       </div>
       <div>
         <Loader type='pacman'/>

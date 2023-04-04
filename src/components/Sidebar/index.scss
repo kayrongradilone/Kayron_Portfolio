@@ -86,7 +86,7 @@
   
       a.contact-link {
         &:after {
-          content: 'CONTATO';
+          content: 'EMAIL';
         }
       }
       a.portfolio-link {
@@ -126,4 +126,16 @@
             }
         }
       }
+}
+
+
+@media all and (max-width: 1200px){
+   .nav-bar { 
+    height: 100%;
+    width: 30px;
+  } 
+ .nav-bar .logo {
+  display: none;
+ }
+ 
 }

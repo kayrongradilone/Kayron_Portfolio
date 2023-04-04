@@ -117,3 +117,21 @@
     animation: backInRight 1s 1.2s;
     animation-fill-mode: forwards;
   }
+
+  @media screen and (max-width: 1200px) {
+    .container {
+      overflow: scroll;
+    }
+    .contact-form {
+      width: 100%;
+    }
+    .text-area {
+      width: 100%;
+    }
+    .map-wrap {
+      display: none;
+    }
+    .container .info-map {
+      display: none;
+    }
+  }

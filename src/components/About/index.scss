@@ -78,3 +78,21 @@
         transform: rotateX(90deg);
       }
 }
+
+@media screen and (max-width: 1200px) {
+  .container .text-zone {
+    margin-bottom: 90%;
+    width: 67%;
+    margin-left: 20px;
+  }
+  .tags,
+  .about-page h1:before,
+  .about-page h1:after {
+    display: none;
+  }
+
+  .stage-cube-cont {
+    display: none;
+  }
+  
+}
