@@ -133,7 +133,7 @@ export const en: Content = {
         slug: "jsilveira",
         title: "JSilveira Property Management",
         description:
-          "Web system for property management with login, property registration and listing, form validation and a mocked REST API.",
+          "End-of-semester college project: web system for property management with login, property registration and listing, form validation and a mocked REST API.",
         ...person.projects.jsilveira,
         tags: [...person.projects.jsilveira.tags],
       },

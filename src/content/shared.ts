@@ -58,7 +58,7 @@ export const person = {
       cover: "/projects/jsilveira.png",
       liveUrl: "https://j-silveira-adm-imoveis.vercel.app/",
       tags: ["React", "TypeScript", "Material UI", "React Router", "Axios", "Yup", "JSON Server"],
-      year: "2023",
+      year: "2021",
     },
   },
 } as const

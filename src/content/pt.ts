@@ -133,7 +133,7 @@ export const pt: Content = {
         slug: "jsilveira",
         title: "JSilveira Administradora de Imóveis",
         description:
-          "Sistema web para gestão de imóveis com login, cadastro e listagem de propriedades, validação de formulários e consumo de API REST simulada.",
+          "Trabalho de conclusão de semestre da faculdade: sistema web para gestão de imóveis com login, cadastro e listagem de propriedades, validação de formulários e consumo de API REST simulada.",
         ...person.projects.jsilveira,
         tags: [...person.projects.jsilveira.tags],
       },
