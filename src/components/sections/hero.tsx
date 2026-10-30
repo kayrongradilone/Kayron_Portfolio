@@ -1,36 +1,22 @@
-import Image from "next/image"
 import { ArrowDownIcon, DownloadIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Reveal } from "@/components/reveal"
 import { RevealText } from "@/components/effects/reveal-text"
 import { Magnetic } from "@/components/effects/magnetic"
 import { Marquee } from "@/components/effects/marquee"
+import { StackCube } from "@/components/effects/stack-cube"
 import { SocialLinks } from "@/components/social-links"
 import { person, type Content } from "@/content"
 
-/**
- * Foto recortada (PNG com fundo transparente), sem moldura: brilho dourado
- * atrás e base esfumada para o recorte se fundir com a página.
- */
-function HeroPhoto() {
+
+function HeroCube() {
   return (
-    <div className="group relative w-56 sm:w-64 lg:w-80 xl:w-[24rem]">
+    <div className="group relative lg:-translate-y-25 [--cube-size:10rem] sm:[--cube-size:11.5rem] lg:[--cube-size:13.5rem] xl:[--cube-size:16rem]">
       <div
         aria-hidden="true"
-        className="absolute inset-x-4 top-12 bottom-6 rounded-full bg-primary/30 opacity-80 blur-3xl transition-opacity duration-500 group-hover:opacity-100 dark:bg-primary/25"
+        className="absolute inset-[18%] rounded-full bg-primary/30 opacity-80 blur-3xl transition-opacity duration-500 group-hover:opacity-100 dark:bg-primary/25"
       />
-      {/* Padding e margens negativas dão espaço à sombra; o degradê fica no wrapper para não cortar a sombra em linha reta. */}
-      <div className="relative -mx-12 -mb-0 px-0 pb-40 [mask-image:linear-gradient(to_bottom,black_72%,transparent)]">
-        <Image
-          src="/images/kayron.png"
-          alt={person.name}
-          width={572}
-          height={736}
-          priority
-          sizes="(min-width: 1280px) 40rem, (min-width: 1024px) 20rem, (min-width: 640px) 16rem, 14rem"
-          className="h-auto w-full drop-shadow-[0_24px_36px_rgba(0,0,0,0.35)] transition-transform duration-500 ease-out group-hover:scale-[1.02]"
-        />
-      </div>
+      <StackCube className="relative" />
     </div>
   )
 }
@@ -128,7 +114,7 @@ export function Hero({ content }: { content: Content }) {
             y={40}
             className="justify-self-center pb-2 lg:justify-self-end lg:pr-6"
           >
-            <HeroPhoto />
+            <HeroCube />
           </Reveal>
         </div>
       </div>

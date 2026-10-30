@@ -55,6 +55,7 @@
   --animate-marquee: marquee 36s linear infinite;
   --animate-orbit: orbit 30s linear infinite;
   --animate-orbit-reverse: orbit-reverse 30s linear infinite;
+  --animate-spin-cube: spin-cube 14s ease-in-out infinite;
 }
 
 /*
@@ -214,6 +215,51 @@
     );
   }
 
+  /* Cubo 3D da stack (hero), herdado do portfólio original. */
+  .stack-cube {
+    --cube-half: calc(var(--cube-size) / 2);
+    position: relative;
+    width: var(--cube-size);
+    height: var(--cube-size);
+    transform-style: preserve-3d;
+    animation: var(--animate-spin-cube);
+  }
+  .group:hover .stack-cube {
+    animation-play-state: paused;
+  }
+  .stack-cube__face {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid color-mix(in oklch, var(--primary) 45%, transparent);
+    border-radius: calc(var(--radius) * 1.6);
+    background: color-mix(in oklch, var(--card) 55%, transparent);
+    box-shadow:
+      0 0 32px color-mix(in oklch, var(--primary) 30%, transparent),
+      inset 0 0 24px color-mix(in oklch, var(--primary) 8%, transparent);
+    backface-visibility: hidden;
+  }
+  .stack-cube__face:nth-child(1) {
+    transform: translateZ(var(--cube-half));
+  }
+  .stack-cube__face:nth-child(2) {
+    transform: rotateY(90deg) translateZ(var(--cube-half));
+  }
+  .stack-cube__face:nth-child(3) {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(var(--cube-half));
+  }
+  .stack-cube__face:nth-child(4) {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(var(--cube-half));
+  }
+  .stack-cube__face:nth-child(5) {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(var(--cube-half));
+  }
+  .stack-cube__face:nth-child(6) {
+    transform: rotateX(-90deg) translateZ(var(--cube-half));
+  }
+
   /* Ticker infinito. */
   .marquee-track {
     display: flex;
@@ -253,6 +299,28 @@
 @keyframes orbit-reverse {
   to {
     transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin-cube {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateX(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
   }
 }
 
