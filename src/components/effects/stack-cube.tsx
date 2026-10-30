@@ -1,6 +1,6 @@
 import { TechIcon } from "@/components/tech-icon"
 import { cn } from "@/lib/utils"
-
+import "./stack-cube.css"
 
 const faces = [
   { name: "React", icon: "react" },
@@ -21,9 +21,9 @@ export function StackCube({ className }: { className?: string }) {
         className,
       )}
     >
-      <div className="stack-cube">
+      <div className="tech-cube">
         {faces.map((face) => (
-          <div key={face.icon} className="stack-cube__face">
+          <div key={face.icon} className="tech-cube__face">
             <TechIcon
               name={face.icon}
               colored
